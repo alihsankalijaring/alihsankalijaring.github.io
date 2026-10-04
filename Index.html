@@ -654,7 +654,7 @@
         // ===== MODE HOSTING MANDIRI (kamera live jalan) =====
         // Isi dengan URL Web App GAS (yang berakhiran /exec) kalau Index.html ini di-host di luar GAS
         // (GitHub Pages / Netlify / Cloudflare Pages). Kalau dibuka lewat GAS, bagian ini otomatis tidak aktif.
-        const GAS_URL = 'https://script.google.com/macros/s/AKfycbzmsjjUidIB69FA4c8rD5M0aYUR_mBLbRgtGNOD39OOr-wuQ4HDoZ1WdKsE41uhOQRSsg/exec';
+        const GAS_URL = 'https://script.google.com/macros/s/AKfycbzpguPtIk6s6B-K01FYWantVbau2-qFvHLcmf1XE-q_pnrESmy0A1_Gv8n2N5hfPtQxsA/exec';
         function makeRunner(ok, fail) {
             return new Proxy({}, { get(_, prop) {
                 if (prop === 'withSuccessHandler') return f => makeRunner(f, fail);
